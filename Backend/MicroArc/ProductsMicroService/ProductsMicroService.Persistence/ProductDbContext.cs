@@ -9,6 +9,10 @@ namespace ProductsMicroService.Persistence
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
 
+        public ProductDbContext(DbContextOptions<ProductDbContext> dbContextOptions) : base(dbContextOptions)
+        {
+        }
+
         public override int SaveChanges()
         {
             var result = base.SaveChanges();
