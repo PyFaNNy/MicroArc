@@ -13,7 +13,7 @@ namespace ProductsMicroService.Application.Services
         {
             _dbContext = context;
         }
-        public CategoryDto Getcategory(Guid categoryId)
+        public CategoryDto GetCategory(Guid categoryId)
         {
             var category = _dbContext.Categories.Find(categoryId);
 
@@ -29,7 +29,7 @@ namespace ProductsMicroService.Application.Services
                 Name = category.Name,
             };
         }
-        public Guid AddNewCatrgory(CategoryDto category)
+        public Guid AddNewCategory(CategoryDto category)
         {
             Category newCategory = new Category
             {
