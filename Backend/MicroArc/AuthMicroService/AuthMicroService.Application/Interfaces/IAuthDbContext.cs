@@ -5,7 +5,7 @@ namespace AuthMicroService.Application.Interfaces
 {
     public interface IAuthDbContext
     {
-        DbSet<User> Products
+        DbSet<User> Users
         {
             get;
             set;

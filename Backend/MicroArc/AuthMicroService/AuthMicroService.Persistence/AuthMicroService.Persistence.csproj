@@ -26,5 +26,9 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\AuthMicroService.Application\AuthMicroService.Application.csproj" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Migrations" />
+	</ItemGroup>
 	
 </Project>

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuthMicroService.Persistence.Migrations
 {
     [DbContext(typeof(AuthDbContext))]
-    [Migration("20230327205459_Initial")]
+    [Migration("20230329125309_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -61,7 +61,7 @@ namespace AuthMicroService.Persistence.Migrations
 
                     b.HasKey("UserID");
 
-                    b.ToTable("Products");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

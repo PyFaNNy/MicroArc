@@ -58,7 +58,7 @@ namespace AuthMicroService.Persistence.Migrations
 
                     b.HasKey("UserID");
 
-                    b.ToTable("Products");
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

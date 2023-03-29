@@ -6,7 +6,7 @@ namespace AuthMicroService.Persistence
 {
     public class AuthDbContext : DbContext, IAuthDbContext
     {
-        public DbSet<User> Products { get; set; }
+        public DbSet<User> Users { get; set; }
 
         public AuthDbContext(DbContextOptions<AuthDbContext> dbContextOptions) : base(dbContextOptions)
         {
