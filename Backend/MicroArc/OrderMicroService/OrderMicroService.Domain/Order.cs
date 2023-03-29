@@ -5,7 +5,7 @@ namespace OrderMicroService.Domain;
 public class Order
 {
     public Guid Id { get; set; }
-    public string UserId { get; private set; }
+    public Guid UserId { get; private set; }
     public DateTime OrderPlaced { get; private set; }
     public bool OrderPaid { get; private set; }
 
@@ -18,7 +18,7 @@ public class Order
     public ICollection<OrderLine> OrderLines { get; private set; }
     public PaymentStatus PaymentStatus { get; private set; }
 
-    public Order(string userId,
+    public Order(Guid userId,
         string firstName,
         string lastName,
         string address,

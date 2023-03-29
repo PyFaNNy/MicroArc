@@ -4,7 +4,7 @@ namespace AuthMicroService.Domain
 {
     public class User
     {
-        public Guid UserID { get; set; }
+        public Guid UserId { get; set; }
         public DateTime CreatedDate { get; set; }
         public string MobilePhone { get; set; }
         public string Name { get; set; }

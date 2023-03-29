@@ -24,7 +24,7 @@ namespace AuthMicroService.Persistence.Migrations
 
             modelBuilder.Entity("AuthMicroService.Domain.User", b =>
                 {
-                    b.Property<Guid>("UserID")
+                    b.Property<Guid>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -56,7 +56,7 @@ namespace AuthMicroService.Persistence.Migrations
                     b.Property<int>("Roles")
                         .HasColumnType("int");
 
-                    b.HasKey("UserID");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
                 });
