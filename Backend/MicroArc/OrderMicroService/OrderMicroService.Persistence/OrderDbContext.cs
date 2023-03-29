@@ -1,14 +1,16 @@
-﻿using AuthMicroService.Application.Interfaces;
-using AuthMicroService.Domain;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using OrderMicroService.Application.Interfaces;
+using OrderMicroService.Domain;
 
-namespace AuthMicroService.Persistence
+namespace OrderMicroService.Persistence
 {
-    public class AuthDbContext : DbContext, IAuthDbContext
+    public class OrderDbContext : DbContext, IOrderDbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderLine> OrderLines { get; set; }
+        public DbSet<Product> Products { get; set; }
 
-        public AuthDbContext(DbContextOptions<AuthDbContext> dbContextOptions) : base(dbContextOptions)
+        public OrderDbContext(DbContextOptions<OrderDbContext> dbContextOptions) : base(dbContextOptions)
         {
         }
 
